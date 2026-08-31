@@ -1,43 +1,72 @@
-# Cybersecurity & GRC Portfolio
+# Cybersecurity, GRC & Operational Resilience Portfolio
 
-Practical examples of cybersecurity, governance, risk, compliance, operational resilience, and security documentation work.
+Practical security work products showing how I turn ambiguous requirements into structured risk decisions, evidence-backed responses, and usable operational plans.
 
-This repository is designed to show **how I approach security problems**, not just list frameworks or buzzwords. The examples focus on turning incomplete or ambiguous information into structured, reviewable work products that a security, compliance, risk, or operations team could actually use.
+This portfolio is intentionally **artifact-first**. Rather than listing frameworks and buzzwords, it shows the reasoning, documentation discipline, and repeatable methods behind governance, risk, compliance, incident response, and resilience work.
 
-## What this portfolio demonstrates
+> **Portfolio note:** These are demonstration artifacts built from fictional scenarios. They do not represent confidential client information, certifications, or unsupported claims of implemented controls.
 
-- Risk identification, scoring, and treatment planning
-- Security questionnaire response discipline
-- Evidence mapping and validation of security claims
-- Incident response and tabletop exercise design
-- Operational resilience and business continuity thinking
-- Clear security documentation for technical and nontechnical reviewers
+## Core capabilities demonstrated
 
-## Featured examples
+| Capability | What is demonstrated |
+| --- | --- |
+| Governance, Risk & Compliance | Risk statements, 5x5 scoring, treatment decisions, ownership, validation status |
+| Third-Party / Security Reviews | Questionnaire drafting, evidence mapping, gap identification, claim validation |
+| Incident Response | Ransomware tabletop design, decision points, injects, evaluation, improvement planning |
+| Operational Resilience | Business impact thinking, downtime operations, dependencies, recovery priorities |
+| Security Documentation | Clear language for technical and nontechnical reviewers without overstating evidence |
+| Automation | Transparent Python risk-scoring logic with validation and automated tests |
 
-### [Security Questionnaire With Evidence Validation](security-questionnaire.md)
-Shows how to answer security-review questions without inventing controls or overstating evidence. Each response separates the proposed answer from the evidence required to support it.
+## Featured work
 
-### [Risk Register Case Study](risk-register-case-study.md)
-Demonstrates likelihood and impact scoring, defensible risk statements, treatment decisions, ownership, and evidence needs.
+### 1. [Control Evidence Mapping Case Study](evidence-mapping-case-study.md)
+Takes a fictional healthcare technology security review from questionnaire language to evidence requirements, ownership, validation status, and defensible external wording. It demonstrates the difference between a policy statement and evidence that a control actually operates.
 
-### [Incident Response Tabletop Exercise](incident-response-tabletop.md)
-A structured ransomware and operational-disruption exercise with objectives, injects, decision points, expected actions, and after-action outputs.
+### 2. [Risk Register Case Study](risk-register-case-study.md)
+Demonstrates likelihood and impact scoring, risk statements, control context, treatment direction, ownership, and evidence needs.
 
-### [Security Documentation Before and After](before-after-security.md)
-Examples of turning vague security language into clearer, reviewable statements.
+**Executable companion:** [`tools/risk_scoring.py`](tools/risk_scoring.py) implements a transparent 5x5 scoring model. [`tools/test_risk_scoring.py`](tools/test_risk_scoring.py) tests rating boundaries, score calculation, and invalid input handling.
 
-### [Resume Improvement Examples](resume-example.md)
-A separate example of concise professional communication and translating vague experience into measurable impact.
+Run it with:
 
-## Working principles
+```bash
+cd tools
+python risk_scoring.py
+python -m unittest test_risk_scoring.py
+```
 
-1. **Do not fabricate evidence.** A security statement should be supported by documentation, configuration, testing, logs, or an accountable control owner.
-2. **Separate facts from assumptions.** Unknown information is a gap to resolve, not permission to guess.
-3. **Write for review.** Security documentation should make it easy for another person to understand what is true, what supports it, who owns it, and what remains unresolved.
-4. **Prioritize risk, not paperwork.** Documentation should help drive decisions, treatment, accountability, and follow-up.
-5. **Keep recommendations practical.** A technically perfect control that cannot be implemented or maintained is not a useful recommendation.
+### 3. [Security Questionnaire With Evidence Validation](security-questionnaire.md)
+Shows how to draft responses without inventing controls. Proposed answers are separated from evidence requirements and validation status so uncertainty remains visible until an accountable owner verifies the claim.
 
-## Repository note
+### 4. [Ransomware Incident Response Tabletop](incident-response-tabletop.md)
+A healthcare-oriented operational disruption exercise with objectives, escalating injects, expected actions, evaluator observations, and improvement-plan outputs.
 
-The case studies in this repository are demonstration artifacts created to show methodology and judgment. They are not presented as confidential client deliverables or as evidence of controls implemented by a specific organization.
+### 5. [Security Documentation Before and After](before-after-security.md)
+Shows how vague security language can be converted into clearer, scoped, reviewable statements.
+
+## How I approach GRC work
+
+1. **Define the claim.** Determine exactly what is being asserted or requested.
+2. **Find the evidence.** Identify the policy, configuration, logs, test results, tickets, diagrams, or accountable owner that can support it.
+3. **Expose uncertainty.** Mark gaps, assumptions, stale evidence, and scope limitations instead of hiding them behind polished language.
+4. **Assess risk.** Translate technical conditions into likelihood, impact, operational consequence, and treatment decisions.
+5. **Assign accountability.** Identify owners and concrete next actions.
+6. **Make the output reviewable.** Another analyst should be able to understand how the conclusion was reached and challenge it if necessary.
+
+## Design principles
+
+- Never fabricate security or compliance evidence.
+- Avoid absolute claims unless scope and evidence support them.
+- Distinguish policy intent from technical implementation.
+- Treat unknowns as findings to resolve, not blanks to fill creatively.
+- Keep scoring logic transparent enough to explain to stakeholders.
+- Connect security findings to operational and business consequences.
+- Prefer reusable processes over one-off paperwork.
+
+## Additional work
+
+The related private **FSL Operator** project applies these principles to reusable workflows for risk scoring, security questionnaire drafting, tabletop exercise development, opportunity prioritization, pricing, and consulting operations. This public repository intentionally exposes methodology and sanitized artifacts without publishing internal business logic or confidential information.
+
+## Background
+
+My work sits at the intersection of cybersecurity, operational risk, emergency response, and healthcare operations. That perspective shapes these artifacts: security controls matter because systems support real operations, and documentation is useful only when it helps people make better decisions under normal conditions and during disruption.
