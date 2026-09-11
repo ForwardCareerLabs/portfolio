@@ -1,43 +1,48 @@
-# Cybersecurity & GRC Portfolio
+# Michael Messina Cybersecurity GRC and Operational Resilience Portfolio
 
-Practical examples of cybersecurity, governance, risk, compliance, operational resilience, and security documentation work.
+I build practical security and resilience work products that help organizations make decisions, document risk, and prepare for disruption.
 
-This repository is designed to show **how I approach security problems**, not just list frameworks or buzzwords. The examples focus on turning incomplete or ambiguous information into structured, reviewable work products that a security, compliance, risk, or operations team could actually use.
+I am the founder of [Forward Security Labs](https://forwardsecuritylabs.com), an Afghanistan veteran, a former paramedic supervisor, and a cybersecurity graduate. My work combines structured cybersecurity and GRC methods with nearly twenty years of emergency operations experience.
 
-## What this portfolio demonstrates
+## Areas of focus
 
-- Risk identification, scoring, and treatment planning
-- Security questionnaire response discipline
-- Evidence mapping and validation of security claims
+- Security questionnaires and evidence validation
+- Third party and vendor risk
+- Risk registers and treatment planning
 - Incident response and tabletop exercise design
-- Operational resilience and business continuity thinking
-- Clear security documentation for technical and nontechnical reviewers
+- Business continuity and operational resilience
+- Clear documentation for technical and nontechnical reviewers
 
-## Featured examples
+## Featured work
 
-### [Security Questionnaire With Evidence Validation](security-questionnaire.md)
-Shows how to answer security-review questions without inventing controls or overstating evidence. Each response separates the proposed answer from the evidence required to support it.
+| Work sample | What it demonstrates |
+|---|---|
+| [Security Questionnaire With Evidence Validation](security-questionnaire.md) | Controlled response drafting, evidence requirements, scope limitations, and customer validation |
+| [Vendor Risk Evidence Matrix](vendor-risk-evidence-matrix.md) | Evidence mapping, gap identification, ownership, and follow up decisions |
+| [Risk Register Case Study](risk-register-case-study.md) | Likelihood and impact scoring, defensible risk statements, treatment, and residual risk discipline |
+| [Business Continuity Dependency Analysis](business-continuity-dependency-analysis.md) | Critical process analysis, dependencies, downtime limits, recovery priorities, and validation needs |
+| [Incident Response Tabletop Exercise](incident-response-tabletop.md) | Healthcare ransomware scenario design, injects, decision points, expected actions, and improvement planning |
+| [Security Documentation Before and After](before-after-security.md) | Improving unclear security language while preserving evidence and validation boundaries |
 
-### [Risk Register Case Study](risk-register-case-study.md)
-Demonstrates likelihood and impact scoring, defensible risk statements, treatment decisions, ownership, and evidence needs.
+## How I work
 
-### [Incident Response Tabletop Exercise](incident-response-tabletop.md)
-A structured ransomware and operational-disruption exercise with objectives, injects, decision points, expected actions, and after-action outputs.
+1. **Start with approved facts.** I do not invent controls, evidence, certifications, or implementation claims.
+2. **Separate supported statements from assumptions.** Unknown information becomes a documented gap or validation request.
+3. **Connect risk to operations.** Findings should explain the affected process, likely consequence, accountable owner, and practical next action.
+4. **Design for review.** A useful deliverable shows what is known, what supports it, what remains unresolved, and who must approve it.
+5. **Keep the final decision with the customer.** Draft questionnaire responses, risk conclusions, and treatment decisions require validation by the responsible organization.
 
-### [Security Documentation Before and After](before-after-security.md)
-Examples of turning vague security language into clearer, reviewable statements.
+## Background
 
-### [Resume Improvement Examples](resume-example.md)
-A separate example of concise professional communication and translating vague experience into measurable impact.
+My cybersecurity work is informed by nearly twenty years in emergency medical services, including supervisory responsibility in a complex urban operating environment. That background shapes how I approach incident command, continuity, escalation, communications, and decisions made under pressure.
 
-## Working principles
+I hold a Bachelor of Science in Cybersecurity from Southern New Hampshire University. Forward Security Labs is a trade name of Forward Career Labs LLC.
 
-1. **Do not fabricate evidence.** A security statement should be supported by documentation, configuration, testing, logs, or an accountable control owner.
-2. **Separate facts from assumptions.** Unknown information is a gap to resolve, not permission to guess.
-3. **Write for review.** Security documentation should make it easy for another person to understand what is true, what supports it, who owns it, and what remains unresolved.
-4. **Prioritize risk, not paperwork.** Documentation should help drive decisions, treatment, accountability, and follow-up.
-5. **Keep recommendations practical.** A technically perfect control that cannot be implemented or maintained is not a useful recommendation.
+## About these examples
 
-## Repository note
+These are sanitized demonstration artifacts created to show methodology and judgment. They are not presented as confidential client deliverables, proof of controls implemented by a specific organization, or substitutes for legal advice, independent audit, or certification.
 
-The case studies in this repository are demonstration artifacts created to show methodology and judgment. They are not presented as confidential client deliverables or as evidence of controls implemented by a specific organization.
+## Contact
+
+- [ForwardSecurityLabs.com](https://forwardsecuritylabs.com)
+- [michael@forwardsecuritylabs.com](mailto:michael@forwardsecuritylabs.com)
